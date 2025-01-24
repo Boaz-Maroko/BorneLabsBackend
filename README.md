@@ -26,3 +26,34 @@ git clone https://github.com/Boaz-Maroko/BorneLabsBackend.git
 ```
 
 ### Step Four: **Install the dependencies**
+Change into the project directory and run the commands below
+```bash
+# For windows
+py -m venv venv
+venv\scripts\activate.ps1
+# For linux
+python3 -m venv venv # You can call the python virtual environment whatever
+source venv/bin/activate
+
+pip install -r requirements.txt
+```
+### Step Five: **Run the development server**
+#### Change into the project directory
+```bash
+cd backend  
+```
+
+```bash
+# windows
+py manage.py makemigrations
+
+py manage.py migrate
+
+py manage.py runserver
+
+# Linux
+python3 manage.py makemigrations
+
+python3 manage.py migrate
+
+python3 manage.py runserver
